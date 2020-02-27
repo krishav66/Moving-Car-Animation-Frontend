@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.building{
+	width: 100%;
+	height: 100vh;	
+	background-size: cover;
+	position: relative;
+	background-position: center;
+	overflow-x: hidden;
+	background-image: url(building.jpg);
+	}
+.car{
+	width: 100px;
+	/* height: 400vh; */
+	bottom: 100px;
+	/* background-size: cover; */
+	left: 40%;
+	position: absolute;
+	z-index: 2;
+}
+.road{
+	width: 500%;
+	height: 200px;
+	background-image: url(roadd.jfif);
+	
+	position: absolute;
+	display: block;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	animation: road 4s linear infinite;
+}
+@keyframes road{
+	100%{transform: translateX(-3000px);}
+}
